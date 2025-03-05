@@ -2,7 +2,7 @@
 
 namespace Test;
 
-class Questao5
+public class Questao5
 {
 	// Maneira mais simples usar o .revert
 	public string InverteCaracteresString(string? str)

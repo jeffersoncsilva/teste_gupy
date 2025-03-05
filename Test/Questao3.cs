@@ -2,7 +2,7 @@
 
 namespace Test;
 
-class Questao3
+public class Questao3
 {
 	private void ImprimeMenorFaturamentoDiario(double[] faturamentoDiario)
 	{
@@ -35,6 +35,8 @@ class Questao3
 
 	public void RealizaOperacoesFaturamento(double[] faturamento)
 	{
+		if (faturamento.Length == 0)
+			return;
 		ImprimeMenorFaturamentoDiario(faturamento);
 		ImprimeMaiorFaturamentoDiario(faturamento);
 		var media = CalculaMediaFaturamentoMensal(faturamento);
